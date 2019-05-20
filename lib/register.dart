@@ -6,6 +6,7 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
+  String _email, _password;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,8 +19,10 @@ class _RegisterState extends State<Register> {
                 child: Column(
                   children: <Widget>[
                     new TextFormField(
+                      //validator: (value) =>,
                       decoration:
                           new InputDecoration(labelText: "E-Mail Address"),
+
                     ),
                     SizedBox(height: 20.0,),
                     new TextFormField(
